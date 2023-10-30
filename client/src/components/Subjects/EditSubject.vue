@@ -12,7 +12,7 @@
         <p>จำนวนคนที่รับ: <input type="text" v-model="subject.numberOfpeople" /></p>
         <p>ปีการศึกษา: <input type="text" v-model="subject.yearOpen" /></p>
         <p>อาจารย์ผู้สอน: <input type="text" v-model="subject.professor" /></p>
-        <p><button type="submit">edit subject</button></p>
+        <p><button class="button" type="submit">edit subject</button></p>
       </form>
     </div>
     <hr />
@@ -70,4 +70,17 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.button {
+  background-color: rgb(65, 63, 63);
+  color: #ffffff;
+  border: 2px solid rgb(65, 63, 63);
+  padding: 8px 13px;
+  border-radius: 40px;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: rgb(65, 63, 63);
+}
+</style>
